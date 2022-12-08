@@ -7,6 +7,7 @@ return {
     enable_scroll_bar = true,
     window_background_opacity = 0.7,
     window_background_image_hsb = {brightness = 0.8},
+    inactive_pane_hsb = {saturation = 0.8, brightness = 0.4, hue = 1.3},
     background = {
         {
             source = {File = '/Users/yutaaoki/.config/wezterm/synthwave.gif'},
@@ -72,6 +73,26 @@ return {
             key = 'n',
             mods = 'SHIFT|CTRL',
             action = wezterm.action.ToggleFullScreen
+        }, {
+            key = 'w',
+            mods = 'CMD',
+            action = wezterm.action.CloseCurrentPane {confirm = true}
+        }, {
+            key = 'LeftArrow',
+            mods = 'CMD|OPT',
+            action = wezterm.action.ActivatePaneDirection 'Left'
+        }, {
+            key = 'RightArrow',
+            mods = 'CMD|OPT',
+            action = wezterm.action.ActivatePaneDirection 'Right'
+        }, {
+            key = 'UpArrow',
+            mods = 'CMD|OPT',
+            action = wezterm.action.ActivatePaneDirection 'Up'
+        }, {
+            key = 'DownArrow',
+            mods = 'CMD|OPT',
+            action = wezterm.action.ActivatePaneDirection 'Down'
         }
     },
     font = wezterm.font('JetBrains Mono', {weight = 'Bold'})
