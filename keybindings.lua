@@ -1,5 +1,14 @@
 local wezterm = require("wezterm")
 
+local tab_keys = {}
+for i = 1, 4 do
+    table.insert(tab_keys, {
+        key = tostring(i),
+        mods = 'CMD',
+        action = wezterm.action.ActivateTab(i - 1)
+    })
+end
+
 local keys = {
     {
         key = 'd',
@@ -27,7 +36,7 @@ local keys = {
         key = 'DownArrow',
         mods = 'CMD|OPT',
         action = wezterm.action.ActivatePaneDirection 'Down'
-    }
+    }, tab_keys[1], tab_keys[2], tab_keys[3], tab_keys[4]
 }
 
 return keys
