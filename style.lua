@@ -10,7 +10,7 @@ local style = {
     inactive_pane_hsb = {saturation = 0.8, brightness = 0.4, hue = 1.3},
     background = {
         {
-            source = {File = base_image_path .. '/cyber.gif'},
+            source = {File = base_image_path .. '/synthwave.gif'},
             repeat_x = 'Mirror',
             opacity = 0.8,
             vertical_align = 'Bottom',
