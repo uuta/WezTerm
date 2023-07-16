@@ -30,11 +30,12 @@ local keys = {
         action = wezterm.action.ActivatePaneDirection 'Down'
     }, tab_keys[1], tab_keys[2], tab_keys[3], tab_keys[4], {
         key = "h",
-        mods = "CMD|OPT",
+        mods = "OPT",
         action = wezterm.action.ActivateTabRelativeNoWrap(-1)
-    }, {
+    },
+    {
         key = "l",
-        mods = "CMD|OPT",
+        mods = "OPT",
         action = wezterm.action.ActivateTabRelativeNoWrap(1)
     }
 }
