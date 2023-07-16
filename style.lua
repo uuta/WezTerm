@@ -25,15 +25,6 @@ local style = {
             horizontal_offset = '30%',
             attachment = {Parallax = 0.5}
         }, {
-            source = {File = base_image_path .. '/left-branch.webp'},
-            repeat_x = 'NoRepeat',
-            hsb = {brightness = 0.3, hue = 1.4},
-            width = '40%',
-            height = '20%',
-            repeat_y_size = '100%',
-            horizontal_align = 'Left',
-            attachment = {Parallax = 0.2}
-        }, {
             source = {File = base_image_path .. '/ps.gif'},
             repeat_x = 'Mirror',
             hsb = {brightness = 0.3, hue = 1.4},
@@ -54,12 +45,6 @@ local style = {
             horizontal_align = 'Left',
             vertical_align = 'Bottom',
             attachment = {Parallax = 0.2}
-        }, {
-            source = {File = base_image_path .. '/hands.webp'},
-            repeat_x = 'Mirror',
-            repeat_y_size = '200%',
-            hsb = dimmer,
-            attachment = {Parallax = 0.1}
         }, {
             source = {File = base_image_path .. '/sun.gif'},
             repeat_x = 'NoRepeat',
