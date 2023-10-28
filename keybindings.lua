@@ -21,14 +21,22 @@ local keys = {
         mods = 'CMD',
         action = wezterm.action.CloseCurrentPane {confirm = true}
     }, {
-        key = 'UpArrow',
-        mods = 'CMD|OPT',
+        key = 'l',
+        mods = 'SHIFT|CTRL',
+        action = wezterm.action.ActivatePaneDirection 'Right'
+    }, {
+        key = 'h',
+        mods = 'SHIFT|CTRL',
+        action = wezterm.action.ActivatePaneDirection 'Left'
+    }, {
+        key = 'k',
+        mods = 'SHIFT|CTRL',
         action = wezterm.action.ActivatePaneDirection 'Up'
     }, {
-        key = 'DownArrow',
-        mods = 'CMD|OPT',
+        key = 'j',
+        mods = 'SHIFT|CTRL',
         action = wezterm.action.ActivatePaneDirection 'Down'
-    }, tab_keys[1], tab_keys[2], tab_keys[3], tab_keys[4], {
+    }, {
         key = "h",
         mods = "OPT",
         action = wezterm.action.ActivateTabRelativeNoWrap(-1)
