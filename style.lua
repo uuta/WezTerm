@@ -10,56 +10,26 @@ local style = {
     inactive_pane_hsb = {saturation = 0.8, brightness = 0.4, hue = 1.3},
     background = {
         {
-            source = {File = base_image_path .. '/car.gif'},
+            source = {File = base_image_path .. '/street.gif'},
             repeat_x = 'Mirror',
-            opacity = 0.8,
+            -- opacity = 0.8,
             vertical_align = 'Bottom',
             hsb = dimmer
         }, {
-            source = {File = base_image_path .. '/popup.gif'},
-            repeat_x = 'NoRepeat',
-            hsb = dimmer,
-            width = '15%',
-            height = '20%',
-            repeat_y_size = '100%',
-            horizontal_offset = '30%',
-            attachment = {Parallax = 0.5}
-        }, {
-            source = {File = base_image_path .. '/ps.gif'},
-            repeat_x = 'Mirror',
-            hsb = {brightness = 0.3, hue = 1.4},
-            width = '10%',
-            height = '10%',
-            repeat_y_size = '100%',
-            repeat_x_size = '50%',
-            vertical_offset = '10%',
-            horizontal_offset = '80%',
-            attachment = {Parallax = 0.3}
-        }, {
-            source = {File = base_image_path .. '/smile.gif'},
-            repeat_x = 'NoRepeat',
-            hsb = dimmer,
-            width = '20%',
-            height = '20%',
-            repeat_y_size = '100%',
-            horizontal_align = 'Left',
-            vertical_align = 'Bottom',
-            attachment = {Parallax = 0.2}
-        }, {
-            source = {File = base_image_path .. '/sun.gif'},
+            source = {File = base_image_path .. '/guy.gif'},
             repeat_x = 'NoRepeat',
             repeat_y_size = '150%',
             width = '12%',
-            height = '20%',
+            height = '30%',
             hsb = dimmer,
-            vertical_offset = '20%',
-            horizontal_offset = '70%',
+            vertical_offset = '55%',
+            horizontal_offset = '80%',
             attachment = {Parallax = 0.15}
         }
     },
-    font_size = 13.0,
+    font_size = 14.0,
     line_height = 1.2,
-    font = wezterm.font('JetBrains Mono', {weight = 'Bold'})
+    font = wezterm.font('NotoSansM Nerd Font Mono', {weight = 'Bold'})
 }
 
 return style
