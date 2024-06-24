@@ -13,5 +13,5 @@ return {
 	font_size = style.font_size,
 	line_height = style.line_height,
 	font = style.font,
-	color_scheme = "Framer",
+	color_scheme = "Mellow Purple (base16",
 }
