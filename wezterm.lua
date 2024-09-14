@@ -13,5 +13,5 @@ return {
 	font_size = style.font_size,
 	line_height = style.line_height,
 	font = style.font,
-	color_scheme = "Mellow Purple (base16",
+	color_scheme = "Horizon Dark (Gogh)",
 }
