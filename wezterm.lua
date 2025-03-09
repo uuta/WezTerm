@@ -13,5 +13,7 @@ return {
 	font_size = style.font_size,
 	line_height = style.line_height,
 	font = style.font,
+	macos_window_background_blur = 20,
+	window_decorations = "RESIZE",
 	color_scheme = "Horizon Dark (Gogh)",
 }

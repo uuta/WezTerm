@@ -31,8 +31,23 @@ local style = {
 	-- 	},
 	-- },
 	font_size = 14.0,
-	line_height = 1.2,
+	line_height = 1.1,
 	font = wezterm.font("NotoSansM Nerd Font Mono", { weight = "Bold" }),
+	macos_window_background_blur = 20,
+	show_new_tab_button_in_tab_bar = false,
+	show_close_tab_button_in_tabs = false,
+	window_frame = {
+		inactive_titlebar_bg = "none",
+		active_titlebar_bg = "none",
+	},
+	window_background_gradient = {
+		colors = { "#000000" },
+	},
+	colors = {
+		tab_bar = {
+			inactive_tab_edge = "none",
+		},
+	},
 }
 
 return style
